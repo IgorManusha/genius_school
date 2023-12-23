@@ -1,3 +1,13 @@
+/* rubik-doodle-shadow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rubik Doodle Shadow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik-doodle-shadow-v1-latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* poppins-100 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -62,9 +72,9 @@ body {
   margin: 0;
 }
 
-li {
+/* li {
   list-style-type: none;
-}
+} */
 
 address {
   font-family: normal;
@@ -77,6 +87,12 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .section {
@@ -112,7 +128,7 @@ p {
 .button:hover {
   background-color: transparent;
   color: var(--color-brand-dark);
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 /* Link section */
@@ -123,7 +139,33 @@ p {
 
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
+  /* font-weight: 600; */
+}
+
+/* Header section */
+
+.header-color {
+  background-color: gray; /*remove*/
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 /* Hero section */
@@ -138,6 +180,8 @@ p {
   text-align: center;
   font-size: 128px;
   font-weight: 600;
+  max-width: 1123px;
+  max-height: 192px;
 }
 
 .hero-title .accent {
@@ -145,14 +189,22 @@ p {
 }
 
 /* Advanteges section */
-.advantages-list {
+
+.advantages-section {
+  padding: 16px 0px;
   background-color: var(--color-brand-light);
-  color: var(--color-primary-light);
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .advantages-item {
   font-size: 20px;
   font-weight: 300;
+  color: var(--color-primary-light);
 }
 
 /* Title section*/
@@ -168,6 +220,16 @@ p {
 }
 
 /* Tradishin  section*/
+
+.tradition-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.tradition-contant {
+  max-width: 710px;
+}
 
 .traditions-title {
   margin-bottom: 42px;
@@ -185,6 +247,10 @@ p {
   text-transform: uppercase;
 }
 
+.tradition-text.limited {
+  max-width: 330px;
+}
+
 /* Chefs section */
 
 .chef-title {
@@ -199,6 +265,22 @@ p {
 }
 
 /* Format section */
+
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid black; /*remove*/
+}
 
 .formats-title {
   margin-bottom: 80px;
