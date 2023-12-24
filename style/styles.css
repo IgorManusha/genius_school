@@ -53,8 +53,9 @@
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
   --color-primary-light-broun: #a18268;
-  --color-brand-light: #819b57;
+  --color-brand-normal: #819b57;
   --color-brand-dark: #465929;
+  --color-brand-ligh: #cfcfbc;
 }
 
 /* Basic Global section */
@@ -120,8 +121,8 @@ ul {
   padding: 16px 32px;
   color: var(--color-primary-light);
   border-radius: 8px;
-  border: 2px solid var(--color-brand-light);
-  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-normal);
+  background-color: var(--color-brand-normal);
   cursor: pointer;
 }
 
@@ -138,15 +139,11 @@ ul {
 }
 
 .link:hover {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
   /* font-weight: 600; */
 }
 
 /* Header section */
-
-.header-color {
-  background-color: gray; /*remove*/
-}
 
 .header-container {
   display: flex;
@@ -172,6 +169,10 @@ ul {
 
 .hero-section {
   padding: 272px 0px;
+  background-image: url(../images/hero-section-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .hero-title {
@@ -179,20 +180,18 @@ ul {
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
-  font-weight: 600;
-  max-width: 1123px;
-  max-height: 192px;
+  font-weight: 900;
 }
 
 .hero-title .accent {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 
 /* Advanteges section */
 
 .advantages-section {
   padding: 16px 0px;
-  background-color: var(--color-brand-light);
+  background-color: var(--color-brand-normal);
 }
 
 .advantages-list {
@@ -212,7 +211,11 @@ ul {
 .section-title {
   font-size: 64px;
   line-height: 1.3;
-  font-weight: 900;
+  font-weight: 600;
+}
+
+.section-title.centered {
+  text-align: center;
 }
 
 .section-title .accent {
@@ -232,6 +235,7 @@ ul {
 }
 
 .traditions-title {
+  width: 710px;
   margin-bottom: 42px;
 }
 
@@ -240,7 +244,7 @@ ul {
 }
 
 .tradition-text .brand {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 
 .tradition-text .uppercase {
@@ -261,7 +265,16 @@ ul {
 }
 
 .chefs-title {
-  margin-bottom: 80px;
+  width: 520px;
+  margin: 0 auto 80px;
+}
+
+.chefs-title::after,
+.chefs-title::before {
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-brand-ligh);
+  content: "";
 }
 
 /* Format section */
@@ -280,6 +293,13 @@ ul {
   padding: 24px;
   border-radius: 16px;
   border: 1px solid black; /*remove*/
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
+  height: 444px;
 }
 
 .formats-title {
@@ -301,6 +321,7 @@ ul {
 /* Contact section */
 
 .contacts-title {
+  width: 605px;
   margin-bottom: 16px;
 }
 
@@ -314,10 +335,18 @@ ul {
 }
 
 .footer-link:hover {
-  color: var(--color-brand-light);
+  color: var(--color-brand-normal);
 }
 
 .address-copyright {
   font-size: 14px;
   color: var(--color-primary-light-broun);
+}
+
+.footer {
+  background-image: url(../images/footer-background.png);
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
