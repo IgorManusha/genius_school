@@ -65,6 +65,7 @@
 }
 
 body {
+  background-color: var(--color-primary-light);
   color: var(--color-primary-dark);
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -256,6 +257,12 @@ ul {
 }
 
 /* Chefs section */
+
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-primary-light-broun);
+}
 
 .chef-title {
   margin-bottom: 16px;
