@@ -350,10 +350,38 @@ ul {
   color: var(--color-primary-light-broun);
 }
 
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-normal);
+}
+
 .footer {
   background-image: url(../images/footer-background.png);
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+/* Carousel  */
+
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  fill: var(--color-primary-light);
+  background-color: var(--color-primary-dark);
 }
