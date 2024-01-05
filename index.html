@@ -16,7 +16,7 @@
 <body>
   <!-- add a comment ctrl + /(slash) -->
   <!-- caninclude this source to check the nesting of tags -->
-  <header>
+  <header class="header-background-color">
     <div class="container">
       <div class="header-container">
         <nav class="header-nav">
@@ -30,7 +30,7 @@
             <li><a class="link" href="#contacts-section">Контакти</a></li>
           </ul>
         </nav>
-        <button class="button" type="button">Замовити дзвінок</button>
+        <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
       </div>
     </div>
   </header>
@@ -231,6 +231,13 @@
       </div>
     </div>
   </footer>
+
+  <div class="backdrop">
+    <div class="modal">
+      <button class="modal-btn-close" type="button">Close</button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>

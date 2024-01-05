@@ -153,6 +153,11 @@ ul {
 
 /* Header section */
 
+.header-background-color {
+  background-color: gray;
+  opacity: 0.5;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -489,4 +494,38 @@ ul {
 .carousel-button:hover {
   fill: var(--color-primary-light);
   background-color: var(--color-primary-dark);
+}
+
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  width: 580px;
+  height: 580px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
