@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+/* li {
+  list-style-type: none;
+} */
+/* address {
+  font-family: normal;
+} */
+a {
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.section {
+    padding: 48px 0px;
+}

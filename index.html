@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet"> -->
   <!-- Styles -->
-  <link rel="stylesheet" href="./style/styles.css" />
+  <link rel="stylesheet" href="./scss/main.css" />
 </head>
 
 <body>
@@ -30,7 +30,7 @@
             <li><a class="link" href="#contacts-section">Контакти</a></li>
           </ul>
         </nav>
-        <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
+        <button class="button button-nav modal-btn-open" type="button">Замовити дзвінок</button>
       </div>
     </div>
   </header>
@@ -65,7 +65,7 @@
               стильний дизайн та висока якість обслуговування!
             </p>
           </div>
-          <img src="./images/peckar.jpg" alt="Пекар посміхаючись дивиться на випечений хліб" />
+          <img class="peckar-arka" src="./images/peckar.jpg" alt="Пекар посміхаючись дивиться на випечений хліб" />
         </div>
       </div>
     </section>
@@ -266,22 +266,24 @@
 
 
 
-      <form name="modal-form" autocomplete="off">
+      <form name="modal-form" autocomplete="on">
 
         <div class="form-field">
           <label class="form-label visually-hidden" for="user-name">Ім'я</label>
-          <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я">
+          <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я" required
+            minlength="4" maxlength="24">
         </div>
 
         <div class="form-field">
           <label class="form-label visually-hidden" for="user-tel">Телефон
           </label>
-          <input class="form-input" type="text" id="user-tel" name="user-name" placeholder="Телефон">
+          <input class="form-input" type="tel" id="user-tel" name="user-name" placeholder="Телефон" required>
         </div>
 
         <div class="form-field">
           <label class="form-label visually-hidden" for="user-email">Електронна пошта</label>
-          <input class="form-input" type="text" id="user-email" name="user-email" placeholder="Електронна пошта">
+          <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна пошта"
+            required>
         </div>
 
         <button class="form-button button" type="submit">Замовити дзвінок</button>
