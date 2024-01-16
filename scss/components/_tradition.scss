@@ -1,34 +1,30 @@
-.tradition-container {
+.tradition-section {
+  padding-top: 96px;
+
+  &__container {
     display: flex;
     justify-content: space-between;
     gap: 40px;
-}
+  }
 
-.tradition-contant {
+  &__contant {
     max-width: 710px;
-}
+  }
 
-.traditions-title {
+  &__title {
     width: 710px;
     margin-bottom: 42px;
-}
+  }
 
-.tradition-section {
-    padding-top: 96px;
-}
-
-.tradition-text .brand {
-    color: var(--color-brand-normal);
-}
-
-.tradition-text .uppercase {
+  &__text .uppercase {
     text-transform: uppercase;
-}
+  }
 
-.tradition-text.limited {
+  &__text.limited {
     max-width: 330px;
+  }
 }
 
 .peckar-arka {
-    border-radius: 197px 197px 4px 4px;
+  border-radius: 197px 197px 4px 4px;
 }
