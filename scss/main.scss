@@ -28,9 +28,9 @@
 
 @import "./components/hero";
 
-/*Text-brand-color-green*/
+/*Text-brand-color-*/
 
-@import "./utils/text-brand-color-green";
+@import "./utils/text-brand-color";
 
 /* Advanteges section */
 
@@ -38,7 +38,7 @@
 
 /* Title section*/
 
-@import "./components/title";
+@import "./components/section";
 
 /* Tradishin  section*/
 
@@ -46,11 +46,13 @@
 
 /* Chefs section */
 
+@import "./components/chef-card.scss";
+
 @import "./components/chef";
 
-/* Format section */
+/* Formats section */
 
-@import "./components/format";
+@import "./components/formats-section";
 
 /* Contact section */
 

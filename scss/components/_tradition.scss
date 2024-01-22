@@ -16,12 +16,16 @@
     margin-bottom: 42px;
   }
 
-  &__text .uppercase {
-    text-transform: uppercase;
+  &__text {
+    &--uppercase {
+      text-transform: uppercase;
+    }
   }
 
-  &__text.limited {
-    max-width: 330px;
+  &__text {
+    &--limited {
+      max-width: 330px;
+    }
   }
 }
 
