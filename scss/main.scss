@@ -28,15 +28,15 @@
 
 @import "./components/hero";
 
-/*Text-brand-color-*/
+/*Text*/
 
-@import "./utils/text-brand-color";
+@import "./utils/text";
 
 /* Advanteges section */
 
 @import "./components/advantages";
 
-/* Title section*/
+/* Section*/
 
 @import "./components/section";
 
@@ -46,13 +46,13 @@
 
 /* Chefs section */
 
-@import "./components/chef-card.scss";
+@import "./components/chef-card";
 
 @import "./components/chef";
 
-/* Formats section */
+/* Format section */
 
-@import "./components/formats-section";
+@import "./components/format";
 
 /* Contact section */
 

@@ -7,7 +7,7 @@
     gap: 40px;
   }
 
-  &__contant {
+  &__content {
     max-width: 710px;
   }
 
@@ -17,14 +17,8 @@
   }
 
   &__text {
-    &--uppercase {
-      text-transform: uppercase;
-    }
-  }
-
-  &__text {
     &--limited {
-      max-width: 330px;
+      max-width: 335px;
     }
   }
 }
