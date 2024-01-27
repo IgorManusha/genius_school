@@ -52,6 +52,8 @@
 
 /* Format section */
 
+@import "./components/format-card";
+
 @import "./components/format";
 
 /* Contact section */
@@ -72,6 +74,10 @@
 
 /* Form */
 
-@import "./components/form";
+@import "./components/input-form";
+
+@import "./components/terms-form";
+
+/*@import "./components/form";*/
 
 /*# sourceMappingURL=main.css.map */
