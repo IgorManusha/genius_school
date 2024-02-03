@@ -1,10 +1,15 @@
 .tradition-section {
-  padding-top: 96px;
+  padding-top: 20px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 96px;
+  }
 
   &__container {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    align-items: flex-start;
   }
 
   &__content {
@@ -12,7 +17,6 @@
   }
 
   &__title {
-    width: 710px;
     margin-bottom: 42px;
   }
 
@@ -21,8 +25,13 @@
       max-width: 335px;
     }
   }
-}
 
-.peckar-arka {
-  border-radius: 197px 197px 4px 4px;
+  &__image {
+    display: none;
+    border-radius: 400px 400px 0px 0px;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
 }
