@@ -1,21 +1,29 @@
 const swiper = new Swiper(".swiper-container", {
-  // Optional parameters
-  // direction: "vertical",
   loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    // when window width is >= 320px
+    480: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 640px
+    768: {
+      slidesPerView: 2,
+    },
+    1279: {
+      slidesPerView: 3,
+    },
+  },
 
-  // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
+    el: ".pagination",
+    bulletClass: "pagination__button",
+    bulletActiveClass: "pagination__button--active",
   },
 
-  // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button.next",
-    prevEl: ".swiper-button.prev",
+    nextEl: ".carousel-button.next",
+    prevEl: ".carousel-button.prev",
   },
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: ".swiper-scrollbar",
-  // },
 });
