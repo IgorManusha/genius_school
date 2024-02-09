@@ -1,25 +1,21 @@
 .formats-section {
-  &__slider {
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__container {
     display: flex;
     align-items: center;
     gap: 30px;
   }
 
-  &__container {
-    overflow: hidden;
+  &__list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
   }
 
-  // &__list {
-  //   display: flex;
-  //   gap: 20px;
-  //   flex-wrap: wrap;
-  // }
-
-  // &__item {
-  //   flex-basis: calc((100% - 40px) / 3);
-  // }
-
-  // &__title {
-  //   margin-bottom: 80px;
-  // }
-}
+//   &__item {
+//     flex-basis: calc((100% - 40px) / 3);
+//   }
+// }
