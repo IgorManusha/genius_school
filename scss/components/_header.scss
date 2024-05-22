@@ -50,3 +50,14 @@
     }
   }
 }
+
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 40xp;
+  &__x {
+    display: flex;
+    height: 300px;
+    width: 500px;
+  }
+}

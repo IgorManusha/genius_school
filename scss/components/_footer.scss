@@ -8,6 +8,10 @@
   padding: 32px 0;
 
   &__address {
+    &--info {
+      z-index: +1;
+    }
+
     &--copyright {
       font-size: 14px;
       color: var(--color-primary-light-broun);
@@ -19,6 +23,17 @@
         fill: var(--color-brand-normal);
       }
     }
+
+    &--contacts {
+      justify-content: center;
+      display: flex;
+      gap: 22px;
+      padding: 8px 0px 0px 8px;
+
+      @media screen and (min-width: $bp-tablet) {
+        justify-content: left;
+      }
+    }
   }
 
   &::before,
@@ -28,32 +43,63 @@
   }
 
   &::before {
-    background-image: url(../images/decor-bread-small.png);
-    width: 180px;
-    height: 120px;
+    background-image: url(../images/bread-mobile-left.png);
+    width: 92px;
+    height: 196px;
     left: 0;
-    bottom: 0;
+
     background-repeat: no-repeat;
+
+    @media screen and (min-width: $bp-tablet) {
+      background-image: url(../images/decor-bread-small.png);
+      width: 380px;
+      height: 190px;
+      right: 0;
+      bottom: -69px;
+      background-repeat: no-repeat;
+    }
   }
 
   &::after {
-    background-image: url(../images/decor-bread-large.png);
-    width: 380px;
-    height: 190px;
-    right: 0;
-    top: 37px;
+    background-image: url(../images/bread-mobile-right.png);
+    width: 112px;
+    height: 120px;
+    right: -11px;
+    bottom: -29px;
+
+    @media screen and (min-width: $bp-tablet) {
+      background-image: url(../images/decor-bread-large.png);
+      width: 380px;
+      height: 190px;
+      right: 0;
+      bottom: -3px;
+      background-repeat: no-repeat;
+    }
   }
 
   &__container {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 24px;
+    }
   }
 
   &__nav,
   &__address {
     display: flex;
-    flex-basis: 50%;
-    gap: 24px;
+    flex-direction: column;
+
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      text-align: left;
+      gap: 24px;
+    }
   }
 
   &__logo,
@@ -61,6 +107,16 @@
   &__list,
   &__info {
     flex-grow: 1;
+  }
+
+  &__menu {
+    &--item {
+      padding: 9px;
+
+      @media screen and (min-width: $bp-tablet) {
+        padding: 8px;
+      }
+    }
   }
 
   &__link {

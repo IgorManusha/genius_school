@@ -10,6 +10,16 @@
 
   &.is-open {
     transform: translateX(0);
+
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &--link {
+        color: var(--color-primary-dark);
+      }
+    }
   }
 
   &__btn-close {
