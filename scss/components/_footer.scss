@@ -19,6 +19,7 @@
 
     &--icon {
       fill: var(--color-primary-light);
+
       &:hover {
         fill: var(--color-brand-normal);
       }
@@ -52,20 +53,20 @@
 
     @media screen and (min-width: $bp-tablet) {
       background-image: url(../images/decor-bread-small.png);
-      width: 380px;
-      height: 190px;
+      width: 103px;
+      height: 121px;
       right: 0;
-      bottom: -69px;
+      bottom: 0;
       background-repeat: no-repeat;
     }
   }
 
   &::after {
     background-image: url(../images/bread-mobile-right.png);
-    width: 112px;
-    height: 120px;
-    right: -11px;
-    bottom: -29px;
+    width: 102px;
+    height: 91px;
+    right: 0;
+    bottom: 0;
 
     @media screen and (min-width: $bp-tablet) {
       background-image: url(../images/decor-bread-large.png);
